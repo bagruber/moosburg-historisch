@@ -5,20 +5,13 @@
 
 ---
 
-## 0. Arbeitsweise (Karpathy-Prinzipien)
+## 0. Arbeitsweise
 
-Nicht verhandelbar, gelten für jede Änderung:
+Die allgemeinen Prinzipien (erst denken, einfachste Lösung, chirurgische
+Änderungen, prüfbare Ziele) standen hier bis September 2026 als abgeschriebene
+Liste. Sie gelten projektübergreifend und stehen deshalb nicht mehr in jedem
+Repo. Was bleibt, gilt nur hier:
 
-1. **Think Before Coding** — Annahmen explizit machen. Bei Mehrdeutigkeit
-   Alternativen zeigen und nachfragen, nicht raten.
-2. **Simplicity First** — Einfachste lauffähige Lösung. Keine spekulativen
-   Features, keine Abstraktionen für Einmal-Nutzung.
-3. **Surgical Changes** — Nur ändern, was die Aufgabe verlangt. Bestehenden
-   Stil matchen, nicht „nebenbei verbessern".
-4. **Goal-Driven Execution** — Vage Aufgaben in messbare Erfolgskriterien
-   übersetzen, mehrstufige Arbeit mit Checkpoints strukturieren.
-
-**Weitere Regeln:**
 - Keine Erwähnung von KI-Tools/Assistenten — nirgendwo: nicht im Code, nicht
   in Commits, nicht im README, nicht in der App.
 - Sprache: UI-Texte und Doku deutsch, Code-Bezeichner deutsch oder englisch,
@@ -358,8 +351,8 @@ Farbakzente nur Gold und Rot. **Kein einseitiger Kantenakzent** (siehe
 
 Zwei Ziele aus einem Branch, wie bei der Baumkarte:
 
-- **GitHub Pages** — `.github/workflows/deploy.yml`, Basis `/moosburghistorisch/`
-- **moosburg.eu** — `.github/workflows/hostinger.yml`, Basis `/data/historisch/`,
+- **GitHub Pages** — `.github/workflows/pages.yml`, Basis `/moosburghistorisch/`
+- **moosburg.eu** — `.github/workflows/moosburg-eu.yml`, Basis `/data/historisch/`,
   `server-dir: data/historisch/`, Secrets `FTP_HOST`/`FTP_USER`/`FTP_PASSWORD`
   (ohne Präfix), `timeout: 300000`
 

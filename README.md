@@ -77,8 +77,8 @@ Wer eine Zuordnung von Hand korrigieren will, ändert dort die Koeffizienten;
 
 Zwei Ziele, zwei Pfade, ein Branch:
 
-- **GitHub Pages** — `.github/workflows/deploy.yml`, Basis `/moosburghistorisch/`
-- **moosburg.eu** — `.github/workflows/hostinger.yml`, Basis `/data/historisch/`:
+- **GitHub Pages** — `.github/workflows/pages.yml`, Basis `/moosburghistorisch/`
+- **moosburg.eu** — `.github/workflows/moosburg-eu.yml`, Basis `/data/historisch/`:
   dort hängen die Karten als Unterpunkt am [Data Hub](https://moosburg.eu/data/),
   neben der Baumkarte.
 
