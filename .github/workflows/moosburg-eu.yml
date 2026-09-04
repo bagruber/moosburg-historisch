@@ -4,7 +4,7 @@ name: Deploy auf moosburg.eu/data/historisch/
 # Die beiden stören sich nicht: Pages nutzt kein FTP.
 #
 # Unterschiedliche base-Pfade, deshalb ein eigener Build-Befehl: Pages liegt
-# unter /moosburghistorisch/ (Repo-Name), auf moosburg.eu hängen die Karten als
+# unter /moosburg-historisch/ (Repo-Name), auf moosburg.eu hängen die Karten als
 # Unterpunkt am Data Hub, also unter /data/historisch/.
 on:
   push:

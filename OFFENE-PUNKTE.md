@@ -31,13 +31,6 @@ tsconfig-Datei auf, die Eintraege stimmen unveraendert weiter. **Nicht
 `build:hostinger` laeuft mit abweichendem `--base` in einem eigenen Workflow.
 Nach einem Update beide Builds pruefen.
 
-## Nichts davon ist gepusht
-
-Alle Aenderungen vom 26.08.2026 liegen als lokale Commits. Der Deploy-Workflow
-wurde von `npm ci` auf `pnpm install --frozen-lockfile` umgestellt und bekommt
-einen `pnpm/action-setup@v4`-Schritt. **Der erste Push aktiviert das.** Bricht
-danach ein Deploy, ist das die erste Stelle zum Nachsehen — nicht der App-Code.
-
 ## Beim naechsten Paket-Update
 
 Weder `pnpm install` noch `pnpm prune` raeumt die alte Version aus

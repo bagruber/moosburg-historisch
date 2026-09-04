@@ -24,7 +24,7 @@ Repo. Was bleibt, gilt nur hier:
 
 Acht Ausgaben derselben topographischen Karte deckungsgleich übereinander-
 legen und über eine Zeitschiene durchblättern. Statische Webapp, mobile-first,
-Hosting auf GitHub Pages (`bagruber.github.io/moosburghistorisch/`) und
+Hosting auf GitHub Pages (`bagruber.github.io/moosburg-historisch/`) und
 parallel auf `moosburg.eu/data/historisch/` neben der Baumkarte.
 
 Teil der Familie unter `bagruber/*` (moosburg, datahub, haushaltvis, council,
@@ -351,7 +351,7 @@ Farbakzente nur Gold und Rot. **Kein einseitiger Kantenakzent** (siehe
 
 Zwei Ziele aus einem Branch, wie bei der Baumkarte:
 
-- **GitHub Pages** — `.github/workflows/pages.yml`, Basis `/moosburghistorisch/`
+- **GitHub Pages** — `.github/workflows/pages.yml`, Basis `/moosburg-historisch/`
 - **moosburg.eu** — `.github/workflows/moosburg-eu.yml`, Basis `/data/historisch/`,
   `server-dir: data/historisch/`, Secrets `FTP_HOST`/`FTP_USER`/`FTP_PASSWORD`
   (ohne Präfix), `timeout: 300000`

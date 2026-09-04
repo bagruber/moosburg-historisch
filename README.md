@@ -6,12 +6,12 @@ Topographische Karte 1:25 000, Blatt 7537 Moosburg a.d.Isar, von 1960 bis 2008
 Ausgabe zu Ausgabe, und die Stadt wächst unter dem Schieber. Mobile-first,
 rein statisch, ohne Tracking.
 
-🔗 **Live:** [bagruber.github.io/moosburghistorisch](https://bagruber.github.io/moosburghistorisch/)
+🔗 **Live:** [bagruber.github.io/moosburg-historisch](https://bagruber.github.io/moosburg-historisch/)
 · auch unter [moosburg.eu/data/historisch/](https://moosburg.eu/data/historisch/)
 
 > ⚠️ **Hinweis:** Dieses Projekt ist eine **private Eigenentwicklung**, kein
 > offizielles Angebot einer Behörde. Wünsche und Bug-Reports gerne als
-> [GitHub-Issue](https://github.com/bagruber/moosburghistorisch/issues).
+> [GitHub-Issue](https://github.com/bagruber/moosburg-historisch/issues).
 > Keine Datenerfassung, kein Tracking, keine Cookies.
 
 ## Die Karten
@@ -77,7 +77,7 @@ Wer eine Zuordnung von Hand korrigieren will, ändert dort die Koeffizienten;
 
 Zwei Ziele, zwei Pfade, ein Branch:
 
-- **GitHub Pages** — `.github/workflows/pages.yml`, Basis `/moosburghistorisch/`
+- **GitHub Pages** — `.github/workflows/pages.yml`, Basis `/moosburg-historisch/`
 - **moosburg.eu** — `.github/workflows/moosburg-eu.yml`, Basis `/data/historisch/`:
   dort hängen die Karten als Unterpunkt am [Data Hub](https://moosburg.eu/data/),
   neben der Baumkarte.
@@ -101,7 +101,7 @@ Teil einer kleinen Familie von Daten-Anwendungen für Moosburg:
 - **[bagruber/haushaltvis](https://github.com/bagruber/haushaltvis)** — Haushaltsvisualisierung
 - **[bagruber/datahub](https://github.com/bagruber/datahub)** — Daten-Dashboards
 - **[bagruber/council](https://github.com/bagruber/council)** — Stadtrats-Transparenz
-- **bagruber/moosburghistorisch** *(dieses Repo)* — historische Karten
+- **bagruber/moosburg-historisch** *(dieses Repo)* — historische Karten
 
 ## Verantwortung
 

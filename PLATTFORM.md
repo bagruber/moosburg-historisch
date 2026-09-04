@@ -11,7 +11,7 @@ Kontext steht im Repo `bagruber/moosburg-eu` in `BRIEFING.md`.
 
 | | Adresse | Basispfad | Build |
 |---|---|---|---|
-| GitHub Pages | `bagruber.github.io/moosburghistorisch/` | `/moosburghistorisch/` | `pnpm build` (`.github/workflows/pages.yml`) |
+| GitHub Pages | `bagruber.github.io/moosburg-historisch/` | `/moosburg-historisch/` | `pnpm build` (`.github/workflows/pages.yml`) |
 | moosburg.eu | `moosburg.eu/data/historisch/` | `/data/historisch/` | `pnpm build:hostinger` (`moosburg-eu.yml`) |
 
 Der Basispfad für moosburg.eu steht **nicht** in `vite.config.ts`, sondern im
