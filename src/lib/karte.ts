@@ -80,6 +80,23 @@ export function blaetterHinzu(karte: maplibregl.Map, basis: string) {
 }
 
 /**
+ * Wartet, bis die Kacheln einer Ausgabe da sind. Die Ebene wird dafuer
+ * sichtbar, aber durchsichtig gesetzt, sonst fordert MapLibre sie gar nicht
+ * erst an. So bleibt das alte Blatt stehen, bis das neue wirklich da ist,
+ * statt dass die Basiskarte durch die Ueberblendung blitzt.
+ */
+export function warteAufBlatt(karte: maplibregl.Map, id: string | null): Promise<void> {
+  if (!id) return Promise.resolve();
+  karte.setPaintProperty(id, "raster-opacity", 0);
+  karte.setLayoutProperty(id, "visibility", "visible");
+  // Gewartet wird auf `idle`, nicht auf `isSourceLoaded`: Eine Quelle, fuer
+  // die noch keine Kachel angefordert wurde, meldet sich sofort als geladen,
+  // und das Warten waere wirkungslos. `idle` faellt erst, wenn die neu
+  // sichtbare Ebene ihre Kacheln hat.
+  return new Promise((fertig) => karte.once("idle", () => fertig()));
+}
+
+/**
  * Blendet von einer Ausgabe auf die naechste um; `null` steht fuer die
  * Gegenwart, also fuer die Basiskarte unter allen Blaettern.
  *
