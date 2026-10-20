@@ -1,4 +1,4 @@
-import maplibregl from "maplibre-gl";
+import * as maplibregl from "maplibre-gl";
 import { AUSGABEN } from "./jahre";
 
 /** Blattschnitt von 7537 in WGS84: West, Sued, Ost, Nord. Gerechnet aus den

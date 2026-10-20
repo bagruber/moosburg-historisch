@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type CSSProperties } from "react";
-import maplibregl from "maplibre-gl";
+import * as maplibregl from "maplibre-gl";
+import maplibreWorker from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
 import { Protocol } from "pmtiles";
 import { Minus, Plus } from "@phosphor-icons/react";
 import { Randblock } from "@/components/Randblock";
@@ -14,6 +15,10 @@ import {
   warteAufBlatt,
   zeige,
 } from "@/lib/karte";
+
+// MapLibre 6 laedt seinen Worker als eigenes Modul. Ohne die gebuendelte URL
+// findet der Vite-Build ihn nicht, und die Karte bleibt leer.
+maplibregl.setWorkerUrl(maplibreWorker);
 
 /** Hoehe des Blatts am Telefon. In Ruhe genau das Instrument, aufgezogen der
  *  Rest. Feste Werte, damit das Aufklappen der Erlaeuterung nichts verschiebt. */
